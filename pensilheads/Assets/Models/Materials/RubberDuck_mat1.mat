@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-8986880348534990553
+--- !u!114 &-6201687680436877439
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: mat23
+  m_Name: RubberDuck_mat1
   m_Shader: {fileID: -6465566751694194690, guid: 59541e6caf586ca4f96ccf48a4813a51,
     type: 3}
   m_Parent: {fileID: 0}
@@ -28,20 +28,30 @@ Material:
   m_ValidKeywords:
   - _VERTEX_COLORS_ON
   m_InvalidKeywords:
-  - _VOLUME_TRANSMISSION_OFF
+  - _ALPHABLEND_ON
+  - _BUILTIN_ALPHABLEND_ON
+  - _DISABLE_SSR_TRANSPARENT
+  - _ENABLE_FOG_ON_TRANSPARENT
+  - _SPECULAR_ON
+  - _VOLUME_TRANSMISSION_ON
   m_LightmapFlags: 6
   m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
+  m_DoubleSidedGI: 1
   m_CustomRenderQueue: -1
   stringTagMap:
     RenderType: Opaque
-  disabledShaderPasses: []
+  disabledShaderPasses:
+  - TransparentDepthPrepass
+  - TransparentDepthPostpass
+  - TransparentBackface
+  - RayTracingPrepass
   m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
     - baseColorTexture:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 8458009813390344275, guid: 3e0a2ddbff3f017488400b17504b3907,
+          type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - clearcoatRoughnessTexture:
@@ -110,7 +120,7 @@ Material:
     - _AlphaToMask: 0
     - _BUILTIN_AlphaClip: 0
     - _BUILTIN_Blend: 0
-    - _BUILTIN_CullMode: 2
+    - _BUILTIN_CullMode: 0
     - _BUILTIN_DstBlend: 0
     - _BUILTIN_QueueControl: 1
     - _BUILTIN_QueueOffset: 0
@@ -123,7 +133,7 @@ Material:
     - _BlendModePreserveSpecular: 1
     - _CLEARCOAT: 0
     - _CastShadows: 1
-    - _Cull: 2
+    - _Cull: 0
     - _DstBlend: 0
     - _IRIDESCENCE: 0
     - _NormalMapFormatXYZ: 0
@@ -131,13 +141,13 @@ Material:
     - _QueueControl: 1
     - _QueueOffset: 0
     - _ReceiveShadows: 1
-    - _SPECULAR: 0
+    - _SPECULAR: 1
     - _SrcBlend: 1
     - _Surface: 0
     - _TEXTURE_TRANSFORM: 0
     - _VERTEX_COLORS: 1
     - _VOLUME_ON: 0
-    - _VOLUME_TRANSMISSION: 0
+    - _VOLUME_TRANSMISSION: 1
     - _WorkflowMode: 1
     - _ZTest: 4
     - _ZWrite: 1
@@ -155,7 +165,7 @@ Material:
     - dispersion: 0
     - emissiveTextureRotation: 0
     - emissiveTextureTexCoord: 0
-    - ior: 1.5
+    - ior: 1
     - iridescenceFactor: 0
     - iridescenceIor: 1.3
     - iridescenceTextureRotation: 0
@@ -176,22 +186,22 @@ Material:
     - roughnessFactor: 1
     - specularColorTextureRotation: 0
     - specularColorTextureTexCoord: 0
-    - specularFactor: 1
+    - specularFactor: 0
     - specularTextureRotation: 0
     - specularTextureTexCoord: 0
     - thicknessFactor: 0
     - thicknessTextureRotation: 0
     - thicknessTextureTexCoord: 0
-    - transmissionFactor: 0
+    - transmissionFactor: 1
     - transmissionTextureRotation: 0
     - transmissionTextureTexCoord: 0
     m_Colors:
     - attenuationColor: {r: 1, g: 1, b: 1, a: 0}
-    - baseColorFactor: {r: 0.09985279, g: 0.09985279, b: 0.09985279, a: 1}
+    - baseColorFactor: {r: 1, g: 1, b: 1, a: 1}
     - emissiveFactor: {r: 0, g: 0, b: 0, a: 0}
     - specularColorFactor: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
---- !u!114 &8904284157439168837
+--- !u!114 &160953824298560452
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}

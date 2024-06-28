@@ -1,0 +1,130 @@
+fileFormatVersion: 2
+guid: 3e0a2ddbff3f017488400b17504b3907
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cardboard
+    second: {fileID: 2100000, guid: 278e7f3dc8ec20f4193e1524635d75c4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: EraserPink
+    second: {fileID: 2100000, guid: b9ee05aa2356ed84a84c1a8a186b5656, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Graphite
+    second: {fileID: 2100000, guid: 98f30e62c3b36c1498176dcea62f7251, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.001
+    second: {fileID: 2100000, guid: 0198b31f7ca73d4419ebac50da90bc81, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.003
+    second: {fileID: 2100000, guid: 44eb549509090b64d9e59322443b2292, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.004
+    second: {fileID: 2100000, guid: 2e53c167595ab6a4ebb4ba103e393a58, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.005
+    second: {fileID: 2100000, guid: c15ff69dc3076494cb22e46f3e14d62e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Metal
+    second: {fileID: 2100000, guid: f864c8c34ad3a084b96852e4ed3b6e6b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: RubberDuck_mat1
+    second: {fileID: 2100000, guid: d2ae1acf51ef65442ad31fd5c578cd8c, type: 2}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 804e1ce4c496647cfa3f1a1134187c71, type: 3}
+  _removeEmptyRootObjects: 1
+  _scaleFactor: 1
+  _maximumLod: 300
+  _readWriteEnabled: 1
+  _generateColliders: 0
+  _swapUvs: 0
+  _generateLightmapUVs: 0
+  _importBlendShapeNames: 1
+  _blendShapeFrameWeight:
+    _option: 0
+    _multiplier: 1
+  _importNormals: 0
+  _importTangents: 0
+  _importCamera: 2
+  _importAnimations: 2
+  _addAnimatorComponent: 0
+  _animationLoopTime: 1
+  _animationLoopPose: 0
+  _importMaterials: 1
+  _enableGpuInstancing: 0
+  _useSceneNameIdentifier: 1
+  _textureCompression: -50
+  optimizeGameObjects: 0
+  materials:
+  - {fileID: -4978068762589569446, guid: 3e0a2ddbff3f017488400b17504b3907, type: 3}
+  - {fileID: -6629797300637803691, guid: 3e0a2ddbff3f017488400b17504b3907, type: 3}
+  - {fileID: 4874126678125670354, guid: 3e0a2ddbff3f017488400b17504b3907, type: 3}
+  - {fileID: -936051843985492305, guid: 3e0a2ddbff3f017488400b17504b3907, type: 3}
+  - {fileID: -4973734387028869240, guid: 3e0a2ddbff3f017488400b17504b3907, type: 3}
+  - {fileID: 8005035558010858481, guid: 3e0a2ddbff3f017488400b17504b3907, type: 3}
+  - {fileID: -6922793697723135513, guid: 3e0a2ddbff3f017488400b17504b3907, type: 3}
+  - {fileID: 3312050983373826766, guid: 3e0a2ddbff3f017488400b17504b3907, type: 3}
+  - {fileID: -6478536213147159724, guid: 3e0a2ddbff3f017488400b17504b3907, type: 3}
+  textures:
+  - {fileID: 8458009813390344275, guid: 3e0a2ddbff3f017488400b17504b3907, type: 3}
+  - {fileID: 3256961150573470652, guid: 3e0a2ddbff3f017488400b17504b3907, type: 3}
+  - {fileID: 2983896354099818783, guid: 3e0a2ddbff3f017488400b17504b3907, type: 3}
+  - {fileID: 8840812261983003404, guid: 3e0a2ddbff3f017488400b17504b3907, type: 3}
+  hasSceneData: 1
+  hasAnimationData: 0
+  hasMaterialData: 1
+  hasTextureData: 1
+  animations: []
+  _extensions:
+  - name: KHR_materials_transmission
+    supported: 1
+    used: 1
+    required: 0
+  - name: KHR_materials_specular
+    supported: 1
+    used: 1
+    required: 0
+  - name: KHR_materials_ior
+    supported: 1
+    used: 1
+    required: 0
+  _textures:
+  - texture: {fileID: 8458009813390344275, guid: 3e0a2ddbff3f017488400b17504b3907,
+      type: 3}
+    shouldBeLinear: 0
+    shouldBeNormalMap: 0
+  - texture: {fileID: 3256961150573470652, guid: 3e0a2ddbff3f017488400b17504b3907,
+      type: 3}
+    shouldBeLinear: 0
+    shouldBeNormalMap: 0
+  - texture: {fileID: 2983896354099818783, guid: 3e0a2ddbff3f017488400b17504b3907,
+      type: 3}
+    shouldBeLinear: 0
+    shouldBeNormalMap: 0
+  - texture: {fileID: 8840812261983003404, guid: 3e0a2ddbff3f017488400b17504b3907,
+      type: 3}
+    shouldBeLinear: 0
+    shouldBeNormalMap: 0
+  _mainAssetIdentifier: scenes/Scene
+  _importPlugins: []
