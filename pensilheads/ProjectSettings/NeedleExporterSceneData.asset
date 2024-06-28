@@ -17,5 +17,14 @@ MonoBehaviour:
     Projects:
     - ProjectPath: ../pensicheads web/LineDrawing
     BuilderScene: 
+  - Path: Assets/MultiplayerTest.unity
+    Projects:
+    - ProjectPath: Needle/newProject
+    BuilderScene: 
+  - Path: Assets/Scenes/MultiplayerTest.unity
+    Projects:
+    - ProjectPath: Needle/newProject
+    BuilderScene: 
   Projects:
   - ProjectPath: ../pensicheads web/LineDrawing
+  - ProjectPath: Needle/newProject
