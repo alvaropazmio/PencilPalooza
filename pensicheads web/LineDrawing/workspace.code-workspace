@@ -1,0 +1,26 @@
+{
+  "folders": [
+    {
+      "path": "."
+    },
+    {
+      "name": "Needle Engine",
+      "path": "./node_modules/@needle-tools/engine"
+    },
+    {
+      "name": "@needle-tools/line-drawing",
+      "path": "node_modules/@needle-tools/line-drawing",
+      "@needle:managed": true
+    }
+  ],
+  "settings": {
+    "window.title": "LineDrawing",
+    "files.exclude": {
+      "package-lock.json": true,
+      "**/.git": true,
+      "**/.DS_Store": true,
+      "**/node_modules": true,
+      "**/*.meta": true
+    }
+  }
+}

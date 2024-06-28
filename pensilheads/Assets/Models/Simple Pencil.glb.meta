@@ -1,0 +1,74 @@
+fileFormatVersion: 2
+guid: 50ba8bfca550cf244bc227252c857593
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mat12
+    second: {fileID: 2100000, guid: 20056f28f6e415e47815314faada1883, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mat15
+    second: {fileID: 2100000, guid: 7e99fd378a7687149957245bd2f84919, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mat18
+    second: {fileID: 2100000, guid: d455d445563cb8c4d85fbb2d24b8993e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mat22
+    second: {fileID: 2100000, guid: 05d6d3b827b84a349803a031403cdd7c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mat23
+    second: {fileID: 2100000, guid: efd6f557576a68640904d24dc2204305, type: 2}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 804e1ce4c496647cfa3f1a1134187c71, type: 3}
+  _removeEmptyRootObjects: 1
+  _scaleFactor: 1
+  _maximumLod: 300
+  _readWriteEnabled: 1
+  _generateColliders: 0
+  _swapUvs: 0
+  _generateLightmapUVs: 0
+  _importBlendShapeNames: 1
+  _blendShapeFrameWeight:
+    _option: 0
+    _multiplier: 1
+  _importNormals: 0
+  _importTangents: 0
+  _importCamera: 2
+  _importAnimations: 2
+  _addAnimatorComponent: 0
+  _animationLoopTime: 1
+  _animationLoopPose: 0
+  _importMaterials: 1
+  _enableGpuInstancing: 0
+  _useSceneNameIdentifier: 1
+  _textureCompression: -50
+  optimizeGameObjects: 0
+  materials:
+  - {fileID: -2669957238963622279, guid: 50ba8bfca550cf244bc227252c857593, type: 3}
+  - {fileID: -364905699845747727, guid: 50ba8bfca550cf244bc227252c857593, type: 3}
+  - {fileID: -1642654745573217572, guid: 50ba8bfca550cf244bc227252c857593, type: 3}
+  - {fileID: 6455781528844964010, guid: 50ba8bfca550cf244bc227252c857593, type: 3}
+  - {fileID: 269840283077852131, guid: 50ba8bfca550cf244bc227252c857593, type: 3}
+  textures: []
+  hasSceneData: 1
+  hasAnimationData: 0
+  hasMaterialData: 1
+  hasTextureData: 0
+  animations: []
+  _extensions: []
+  _textures: []
+  _mainAssetIdentifier: scenes/Scene
+  _importPlugins: []
