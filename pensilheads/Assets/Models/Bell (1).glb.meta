@@ -1,0 +1,73 @@
+fileFormatVersion: 2
+guid: a105c27b1c4b9e943913fbbdad0d8475
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.007
+    second: {fileID: 2100000, guid: 45a779fc627cce14b8b84a86299cf12d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mustache
+    second: {fileID: 2100000, guid: 44b0f60d5b5684a43b1cccf2ef57e4eb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mat12
+    second: {fileID: 2100000, guid: 20056f28f6e415e47815314faada1883, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mat23
+    second: {fileID: 2100000, guid: efd6f557576a68640904d24dc2204305, type: 2}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 804e1ce4c496647cfa3f1a1134187c71, type: 3}
+  _removeEmptyRootObjects: 1
+  _scaleFactor: 1
+  _maximumLod: 300
+  _readWriteEnabled: 1
+  _generateColliders: 0
+  _swapUvs: 0
+  _generateLightmapUVs: 0
+  _importBlendShapeNames: 1
+  _blendShapeFrameWeight:
+    _option: 0
+    _multiplier: 1
+  _importNormals: 0
+  _importTangents: 0
+  _importCamera: 2
+  _importAnimations: 2
+  _addAnimatorComponent: 0
+  _animationLoopTime: 1
+  _animationLoopPose: 0
+  _importMaterials: 1
+  _enableGpuInstancing: 0
+  _useSceneNameIdentifier: 1
+  _textureCompression: -50
+  optimizeGameObjects: 0
+  materials:
+  - {fileID: -8274133419916619345, guid: a105c27b1c4b9e943913fbbdad0d8475, type: 3}
+  - {fileID: 4104140182623948676, guid: a105c27b1c4b9e943913fbbdad0d8475, type: 3}
+  - {fileID: -1642654745573217572, guid: a105c27b1c4b9e943913fbbdad0d8475, type: 3}
+  - {fileID: -2669957238963622279, guid: a105c27b1c4b9e943913fbbdad0d8475, type: 3}
+  textures:
+  - {fileID: -215667529432450029, guid: a105c27b1c4b9e943913fbbdad0d8475, type: 3}
+  hasSceneData: 1
+  hasAnimationData: 0
+  hasMaterialData: 1
+  hasTextureData: 1
+  animations: []
+  _extensions: []
+  _textures:
+  - texture: {fileID: -215667529432450029, guid: a105c27b1c4b9e943913fbbdad0d8475,
+      type: 3}
+    shouldBeLinear: 0
+    shouldBeNormalMap: 0
+  _mainAssetIdentifier: scenes/Scene
+  _importPlugins: []

@@ -1,5 +1,18 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-6529043090532741140
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 7
 --- !u!21 &2100000
 Material:
   serializedVersion: 8
@@ -7,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: mat12
+  m_Name: lambert2SG
   m_Shader: {fileID: -6465566751694194690, guid: 59541e6caf586ca4f96ccf48a4813a51,
     type: 3}
   m_Parent: {fileID: 0}
@@ -15,14 +28,23 @@ Material:
   m_ValidKeywords:
   - _VERTEX_COLORS_ON
   m_InvalidKeywords:
-  - _VOLUME_TRANSMISSION_OFF
+  - _ALPHABLEND_ON
+  - _BUILTIN_ALPHABLEND_ON
+  - _DISABLE_SSR_TRANSPARENT
+  - _ENABLE_FOG_ON_TRANSPARENT
+  - _SPECULAR_ON
+  - _VOLUME_TRANSMISSION_ON
   m_LightmapFlags: 6
   m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
+  m_DoubleSidedGI: 1
   m_CustomRenderQueue: -1
   stringTagMap:
     RenderType: Opaque
-  disabledShaderPasses: []
+  disabledShaderPasses:
+  - TransparentDepthPrepass
+  - TransparentDepthPostpass
+  - TransparentBackface
+  - RayTracingPrepass
   m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
@@ -97,7 +119,7 @@ Material:
     - _AlphaToMask: 0
     - _BUILTIN_AlphaClip: 0
     - _BUILTIN_Blend: 0
-    - _BUILTIN_CullMode: 2
+    - _BUILTIN_CullMode: 0
     - _BUILTIN_DstBlend: 0
     - _BUILTIN_QueueControl: 1
     - _BUILTIN_QueueOffset: 0
@@ -110,7 +132,7 @@ Material:
     - _BlendModePreserveSpecular: 1
     - _CLEARCOAT: 0
     - _CastShadows: 1
-    - _Cull: 2
+    - _Cull: 0
     - _DstBlend: 0
     - _IRIDESCENCE: 0
     - _NormalMapFormatXYZ: 0
@@ -118,13 +140,13 @@ Material:
     - _QueueControl: 1
     - _QueueOffset: 0
     - _ReceiveShadows: 1
-    - _SPECULAR: 0
+    - _SPECULAR: 1
     - _SrcBlend: 1
     - _Surface: 0
     - _TEXTURE_TRANSFORM: 0
     - _VERTEX_COLORS: 1
     - _VOLUME_ON: 0
-    - _VOLUME_TRANSMISSION: 0
+    - _VOLUME_TRANSMISSION: 1
     - _WorkflowMode: 1
     - _ZTest: 4
     - _ZWrite: 1
@@ -142,7 +164,7 @@ Material:
     - dispersion: 0
     - emissiveTextureRotation: 0
     - emissiveTextureTexCoord: 0
-    - ior: 1.5
+    - ior: 1
     - iridescenceFactor: 0
     - iridescenceIor: 1.3
     - iridescenceTextureRotation: 0
@@ -163,35 +185,22 @@ Material:
     - roughnessFactor: 1
     - specularColorTextureRotation: 0
     - specularColorTextureTexCoord: 0
-    - specularFactor: 1
+    - specularFactor: 0
     - specularTextureRotation: 0
     - specularTextureTexCoord: 0
     - thicknessFactor: 0
     - thicknessTextureRotation: 0
     - thicknessTextureTexCoord: 0
-    - transmissionFactor: 0
+    - transmissionFactor: 1
     - transmissionTextureRotation: 0
     - transmissionTextureTexCoord: 0
     m_Colors:
     - attenuationColor: {r: 1, g: 1, b: 1, a: 0}
-    - baseColorFactor: {r: 1, g: 0.9211914, b: 0.2209163, a: 1}
+    - baseColorFactor: {r: 0.4613561, g: 0.4613561, b: 0.4613561, a: 1}
     - emissiveFactor: {r: 0, g: 0, b: 0, a: 0}
     - specularColorFactor: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
---- !u!114 &3158844466544445285
-MonoBehaviour:
-  m_ObjectHideFlags: 11
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  version: 7
---- !u!114 &5151385369807848423
+--- !u!114 &5543780378994343301
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}

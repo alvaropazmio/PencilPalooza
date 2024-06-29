@@ -13,6 +13,15 @@ export class SoundNetworkingManager extends Behaviour {
     @serializable(AudioSource)
     carSound: AudioSource;
 
+    @serializable(AudioSource)
+    springSound: AudioSource;
+
+    @serializable(AudioSource)
+    bellSound: AudioSource;
+
+
+    @serializable(AudioSource)
+    winSound: AudioSource;
 
     @serializable(AudioSource)
     backgroundMusic: AudioSource;
@@ -43,13 +52,28 @@ export class SoundNetworkingManager extends Behaviour {
 
        if(data.soundname == "duck"){
            this.duckSound.play();
-           console.log("play duck sound");
+
        }
 
          if(data.soundname == "car"){
           this.carSound.play();
-          console.log("play car sound");
+
          }
+
+         if(data.soundname == "bell"){
+            this.bellSound.play();
+
+           }
+
+           if(data.soundname == "spring"){
+            this.springSound.play();
+
+           }
+
+           if(data.soundname == "win"){
+            this.winSound.play();
+
+           }
          
             if(data.soundname == "backgroundmusic"){
 

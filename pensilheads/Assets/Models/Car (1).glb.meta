@@ -1,0 +1,66 @@
+fileFormatVersion: 2
+guid: 971f40baa84b43d48a8e21c7c009adcb
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.007
+    second: {fileID: 2100000, guid: 45a779fc627cce14b8b84a86299cf12d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: citybits_texture
+    second: {fileID: 2100000, guid: 77bbfcb7bb36df542b8f66dc66c56700, type: 2}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 804e1ce4c496647cfa3f1a1134187c71, type: 3}
+  _removeEmptyRootObjects: 1
+  _scaleFactor: 1
+  _maximumLod: 300
+  _readWriteEnabled: 1
+  _generateColliders: 0
+  _swapUvs: 0
+  _generateLightmapUVs: 0
+  _importBlendShapeNames: 1
+  _blendShapeFrameWeight:
+    _option: 0
+    _multiplier: 1
+  _importNormals: 0
+  _importTangents: 0
+  _importCamera: 2
+  _importAnimations: 2
+  _addAnimatorComponent: 0
+  _animationLoopTime: 1
+  _animationLoopPose: 0
+  _importMaterials: 1
+  _enableGpuInstancing: 0
+  _useSceneNameIdentifier: 1
+  _textureCompression: -50
+  optimizeGameObjects: 0
+  materials:
+  - {fileID: -8274133419916619345, guid: 971f40baa84b43d48a8e21c7c009adcb, type: 3}
+  - {fileID: -594917684604863423, guid: 971f40baa84b43d48a8e21c7c009adcb, type: 3}
+  textures:
+  - {fileID: -215667529432450029, guid: 971f40baa84b43d48a8e21c7c009adcb, type: 3}
+  - {fileID: -784631540884083433, guid: 971f40baa84b43d48a8e21c7c009adcb, type: 3}
+  hasSceneData: 1
+  hasAnimationData: 0
+  hasMaterialData: 1
+  hasTextureData: 1
+  animations: []
+  _extensions: []
+  _textures:
+  - texture: {fileID: -215667529432450029, guid: 971f40baa84b43d48a8e21c7c009adcb,
+      type: 3}
+    shouldBeLinear: 0
+    shouldBeNormalMap: 0
+  - texture: {fileID: -784631540884083433, guid: 971f40baa84b43d48a8e21c7c009adcb,
+      type: 3}
+    shouldBeLinear: 0
+    shouldBeNormalMap: 0
+  _mainAssetIdentifier: scenes/Scene
+  _importPlugins: []
