@@ -6,9 +6,12 @@ export class AudioSender extends Behaviour {
 
     @serializable()
     audioName: string = "none";
+
+    @serializable()
+    audioOn:boolean = true;
     
     public sendSoundCommand(){
-        this.context.connection?.send("soundon", { soundname:this.audioName });
+        this.context.connection?.send("soundon", { soundname:this.audioName, soundon:this.audioOn });
         console.log("send soundon")
     }
 }

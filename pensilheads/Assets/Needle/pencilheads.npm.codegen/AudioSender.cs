@@ -8,6 +8,7 @@ namespace Needle.Typescript.GeneratedComponents
 	public partial class AudioSender : UnityEngine.MonoBehaviour
 	{
 		public string @audioName = "none";
+		public bool @audioOn = true;
 		public void sendSoundCommand(){}
 	}
 }

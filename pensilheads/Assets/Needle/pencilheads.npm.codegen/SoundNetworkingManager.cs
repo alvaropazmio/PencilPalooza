@@ -9,6 +9,7 @@ namespace Needle.Typescript.GeneratedComponents
 	{
 		public UnityEngine.AudioSource @duckSound;
 		public UnityEngine.AudioSource @carSound;
+		public UnityEngine.AudioSource @backgroundMusic;
 		public string @myStringField = "Hello World";
 		public void OnEnable(){}
 	}

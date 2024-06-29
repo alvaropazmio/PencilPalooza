@@ -13,6 +13,10 @@ export class SoundNetworkingManager extends Behaviour {
     @serializable(AudioSource)
     carSound: AudioSource;
 
+
+    @serializable(AudioSource)
+    backgroundMusic: AudioSource;
+
     @serializable()
     myStringField: string = "Hello World";
     
@@ -41,7 +45,23 @@ export class SoundNetworkingManager extends Behaviour {
            this.duckSound.play();
            console.log("play duck sound");
        }
-    }
+
+         if(data.soundname == "car"){
+          this.carSound.play();
+          console.log("play car sound");
+         }
+         
+            if(data.soundname == "backgroundmusic"){
+
+                if(data.soundon == false){
+                    this.backgroundMusic.stop();
+                    console.log("stop background music");
+                } else{
+                    this.backgroundMusic.play();
+                    console.log("play background music");
+                }
+            }
+}
 }
 
 export class SnowballData {
