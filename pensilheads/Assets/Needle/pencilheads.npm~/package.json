@@ -2,14 +2,16 @@
   "name": "pencilheads.npm",
   "version": "1.0.0",
   "main": "index.ts",
-  "dependencies": {},
+  "dependencies": {
+    "three.meshline": "^1.4.0"
+  },
   "peerDependencies": {
     "@needle-tools/engine": "^3.41.1-alpha",
     "three": "npm:@needle-tools/three@^0.162.3"
   },
   "devDependencies": {
     "@needle-tools/engine": "^3.41.1-alpha",
-    "three": "npm:@needle-tools/three@^0.162.3",
-    "@types/three": "0.162.0"
+    "@types/three": "0.162.0",
+    "three": "npm:@needle-tools/three@^0.162.3"
   }
 }

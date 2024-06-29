@@ -2,7 +2,12 @@ fileFormatVersion: 2
 guid: ccace3146eae5d54ea216dff12514888
 ScriptedImporter:
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Graphite
+    second: {fileID: 2100000, guid: 98f30e62c3b36c1498176dcea62f7251, type: 2}
   serializedVersion: 2
   userData: 
   assetBundleName: 
@@ -26,26 +31,26 @@ ScriptedImporter:
   _addAnimatorComponent: 0
   _animationLoopTime: 1
   _animationLoopPose: 0
-  _importMaterials: 1
+  _importMaterials: 0
   _enableGpuInstancing: 0
   _useSceneNameIdentifier: 1
   _textureCompression: -50
   optimizeGameObjects: 0
   materials:
-  - {instanceID: 0}
-  - {instanceID: 0}
-  - {instanceID: 0}
-  - {instanceID: 0}
-  - {instanceID: 0}
-  - {instanceID: 0}
-  - {instanceID: 0}
-  - {instanceID: 0}
-  - {instanceID: 0}
+  - {fileID: -4978068762589569446, guid: ccace3146eae5d54ea216dff12514888, type: 3}
+  - {fileID: -6629797300637803691, guid: ccace3146eae5d54ea216dff12514888, type: 3}
+  - {fileID: 4874126678125670354, guid: ccace3146eae5d54ea216dff12514888, type: 3}
+  - {fileID: -936051843985492305, guid: ccace3146eae5d54ea216dff12514888, type: 3}
+  - {fileID: -4973734387028869240, guid: ccace3146eae5d54ea216dff12514888, type: 3}
+  - {fileID: 8005035558010858481, guid: ccace3146eae5d54ea216dff12514888, type: 3}
+  - {fileID: -6922793697723135513, guid: ccace3146eae5d54ea216dff12514888, type: 3}
+  - {fileID: 3312050983373826766, guid: ccace3146eae5d54ea216dff12514888, type: 3}
+  - {fileID: -6478536213147159724, guid: ccace3146eae5d54ea216dff12514888, type: 3}
   textures:
-  - {instanceID: 0}
-  - {instanceID: 0}
-  - {instanceID: 0}
-  - {instanceID: 0}
+  - {fileID: 8458009813390344275, guid: ccace3146eae5d54ea216dff12514888, type: 3}
+  - {fileID: 3256961150573470652, guid: ccace3146eae5d54ea216dff12514888, type: 3}
+  - {fileID: 2983896354099818783, guid: ccace3146eae5d54ea216dff12514888, type: 3}
+  - {fileID: 8840812261983003404, guid: ccace3146eae5d54ea216dff12514888, type: 3}
   hasSceneData: 1
   hasAnimationData: 0
   hasMaterialData: 1
@@ -65,16 +70,20 @@ ScriptedImporter:
     used: 1
     required: 0
   _textures:
-  - texture: {instanceID: 0}
+  - texture: {fileID: 8458009813390344275, guid: ccace3146eae5d54ea216dff12514888,
+      type: 3}
     shouldBeLinear: 0
     shouldBeNormalMap: 0
-  - texture: {instanceID: 0}
+  - texture: {fileID: 3256961150573470652, guid: ccace3146eae5d54ea216dff12514888,
+      type: 3}
     shouldBeLinear: 0
     shouldBeNormalMap: 0
-  - texture: {instanceID: 0}
+  - texture: {fileID: 2983896354099818783, guid: ccace3146eae5d54ea216dff12514888,
+      type: 3}
     shouldBeLinear: 0
     shouldBeNormalMap: 0
-  - texture: {instanceID: 0}
+  - texture: {fileID: 8840812261983003404, guid: ccace3146eae5d54ea216dff12514888,
+      type: 3}
     shouldBeLinear: 0
     shouldBeNormalMap: 0
   _mainAssetIdentifier: scenes/Scene

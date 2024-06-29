@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite';
 import viteCompression from 'vite-plugin-compression';
-import basicSsl from '@vitejs/plugin-basic-ssl'
+import basicSsl from '@vitejs/plugin-basic-ssl';
+import { svelte } from '@sveltejs/vite-plugin-svelte';
 
 export default defineConfig(async ({ command }) => {
 
@@ -13,6 +14,7 @@ export default defineConfig(async ({ command }) => {
             basicSsl(),
             useGzip(needleConfig) ? viteCompression({ deleteOriginFile: true }) : null,
             needlePlugins(command, needleConfig),
+            svelte({/* plugin options */})
         ],
         server: {
             https: true,
