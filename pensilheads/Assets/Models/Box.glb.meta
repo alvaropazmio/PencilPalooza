@@ -1,0 +1,98 @@
+fileFormatVersion: 2
+guid: fd85d6fd6cc874e448f6c6cc971305f4
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cardboard
+    second: {fileID: 2100000, guid: 278e7f3dc8ec20f4193e1524635d75c4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CardboardLidA
+    second: {fileID: 2100000, guid: edeee5f8226b9ff48a2547f1f8bb30da, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CardboardLidB
+    second: {fileID: 2100000, guid: a320bd778cc967a4cacff11678923cfd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Paper
+    second: {fileID: 2100000, guid: 1a70c7c5f15239741a9feef4b5ed241b, type: 2}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 804e1ce4c496647cfa3f1a1134187c71, type: 3}
+  _removeEmptyRootObjects: 1
+  _scaleFactor: 1
+  _maximumLod: 300
+  _readWriteEnabled: 1
+  _generateColliders: 0
+  _swapUvs: 0
+  _generateLightmapUVs: 0
+  _importBlendShapeNames: 1
+  _blendShapeFrameWeight:
+    _option: 0
+    _multiplier: 1
+  _importNormals: 0
+  _importTangents: 0
+  _importCamera: 2
+  _importAnimations: 2
+  _addAnimatorComponent: 0
+  _animationLoopTime: 1
+  _animationLoopPose: 0
+  _importMaterials: 1
+  _enableGpuInstancing: 0
+  _useSceneNameIdentifier: 1
+  _textureCompression: -50
+  optimizeGameObjects: 0
+  materials:
+  - {fileID: 3312050983373826766, guid: fd85d6fd6cc874e448f6c6cc971305f4, type: 3}
+  - {fileID: 2565534315720911105, guid: fd85d6fd6cc874e448f6c6cc971305f4, type: 3}
+  - {fileID: -5083575573863425157, guid: fd85d6fd6cc874e448f6c6cc971305f4, type: 3}
+  - {fileID: -145471255238047471, guid: fd85d6fd6cc874e448f6c6cc971305f4, type: 3}
+  textures:
+  - {fileID: 5527499116128075178, guid: fd85d6fd6cc874e448f6c6cc971305f4, type: 3}
+  - {fileID: 8157451478705145666, guid: fd85d6fd6cc874e448f6c6cc971305f4, type: 3}
+  - {fileID: -698541641497925673, guid: fd85d6fd6cc874e448f6c6cc971305f4, type: 3}
+  - {fileID: 4265722980153329608, guid: fd85d6fd6cc874e448f6c6cc971305f4, type: 3}
+  - {fileID: -898898688462608371, guid: fd85d6fd6cc874e448f6c6cc971305f4, type: 3}
+  - {fileID: 378667417745653529, guid: fd85d6fd6cc874e448f6c6cc971305f4, type: 3}
+  hasSceneData: 1
+  hasAnimationData: 0
+  hasMaterialData: 1
+  hasTextureData: 1
+  animations: []
+  _extensions: []
+  _textures:
+  - texture: {fileID: 5527499116128075178, guid: fd85d6fd6cc874e448f6c6cc971305f4,
+      type: 3}
+    shouldBeLinear: 1
+    shouldBeNormalMap: 1
+  - texture: {fileID: 8157451478705145666, guid: fd85d6fd6cc874e448f6c6cc971305f4,
+      type: 3}
+    shouldBeLinear: 0
+    shouldBeNormalMap: 0
+  - texture: {fileID: -698541641497925673, guid: fd85d6fd6cc874e448f6c6cc971305f4,
+      type: 3}
+    shouldBeLinear: 1
+    shouldBeNormalMap: 1
+  - texture: {fileID: 4265722980153329608, guid: fd85d6fd6cc874e448f6c6cc971305f4,
+      type: 3}
+    shouldBeLinear: 1
+    shouldBeNormalMap: 1
+  - texture: {fileID: -898898688462608371, guid: fd85d6fd6cc874e448f6c6cc971305f4,
+      type: 3}
+    shouldBeLinear: 0
+    shouldBeNormalMap: 0
+  - texture: {fileID: 378667417745653529, guid: fd85d6fd6cc874e448f6c6cc971305f4,
+      type: 3}
+    shouldBeLinear: 0
+    shouldBeNormalMap: 0
+  _mainAssetIdentifier: scenes/Scene
+  _importPlugins: []
