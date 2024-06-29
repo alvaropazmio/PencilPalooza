@@ -5,11 +5,10 @@
 
 namespace Needle.Typescript.GeneratedComponents
 {
-	public partial class StateManager : UnityEngine.MonoBehaviour
+	public partial class StateSetter : UnityEngine.MonoBehaviour
 	{
-		public void awake(){}
-		public void start(){}
-		public void onStateChanged(object @state){}
+		public string @state = "";
+		public void onPointerClick(UnityEngine.EventSystems.PointerEventData @args){}
 	}
 }
 
