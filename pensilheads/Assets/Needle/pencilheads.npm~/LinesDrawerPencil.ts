@@ -69,18 +69,18 @@ export class LinesDrawerPencil extends Behaviour {
     }
 
     private onPointerUpdate(args: NEPointerEvent) {
-        //const pos = args.space.getWorldPosition(getTempVector());
+        const pos = args.space.getWorldPosition(getTempVector());
         //const pos = this.gameObject.position
 
         //get position of the parent object
-        const pos = getWorldPosition(this.gameObject);
-        //const rot = args.space.getWorldDirection(getTempVector());
+        //const pos = getWorldPosition(this.gameObject);
+        const rot = args.space.getWorldDirection(getTempVector());
         // rotation pointing down
-        const rot = new Vector3(0, 1, 0);
+        //const rot = new Vector3(0, 1, 0);
         const ray = new Ray(pos, rot);
 
-        Gizmos.DrawRay	(ray.origin, ray.direction);
-            Gizmos.DrawDirection(ray.origin, ray.direction, 0.1);
+/*         Gizmos.DrawRay	(ray.origin, ray.direction);
+            Gizmos.DrawDirection(ray.origin, ray.direction, 0.1); */
 
         const finish = this.context.input.getPointerUp(args.pointerId);
 
