@@ -2310,6 +2310,12 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1575380193}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!82 &1589975604 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 3031249885255835830, guid: a89f79933a781f1428d5c7fd8c41bfdf,
+    type: 3}
+  m_PrefabInstance: {fileID: 2027983385785444178}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1597275517
 GameObject:
   m_ObjectHideFlags: 0
@@ -3438,6 +3444,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 165151760122007334}
   m_PrefabAsset: {fileID: 0}
+--- !u!82 &165151760122007336 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 6741765019718961855, guid: 6e502d1c0acfac9499e2fb84cade86fd,
+    type: 3}
+  m_PrefabInstance: {fileID: 165151760122007334}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &165151760122007337 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 373775522682212516, guid: 6e502d1c0acfac9499e2fb84cade86fd,
+    type: 3}
+  m_PrefabInstance: {fileID: 165151760122007334}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2027983385785444178
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3505,12 +3523,27 @@ PrefabInstance:
         type: 3}
       propertyPath: carSound
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 165151760122007337}
+    - target: {fileID: 9218756395955186370, guid: a89f79933a781f1428d5c7fd8c41bfdf,
+        type: 3}
+      propertyPath: winSound
+      value: 
+      objectReference: {fileID: 1589975604}
+    - target: {fileID: 9218756395955186370, guid: a89f79933a781f1428d5c7fd8c41bfdf,
+        type: 3}
+      propertyPath: bellSound
+      value: 
+      objectReference: {fileID: 1146813540}
     - target: {fileID: 9218756395955186370, guid: a89f79933a781f1428d5c7fd8c41bfdf,
         type: 3}
       propertyPath: duckSound
       value: 
       objectReference: {fileID: 1146813540}
+    - target: {fileID: 9218756395955186370, guid: a89f79933a781f1428d5c7fd8c41bfdf,
+        type: 3}
+      propertyPath: springSound
+      value: 
+      objectReference: {fileID: 165151760122007336}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
