@@ -10,6 +10,7 @@ namespace Needle.Typescript.GeneratedComponents
 		public UnityEngine.Events.UnityEvent @onStart;
 		public UnityEngine.Events.UnityEvent @onLevel1;
 		public UnityEngine.Events.UnityEvent @onResult;
+		public void OnEnable(){}
 		public void start(){}
 		public void onDestroy(){}
 		public void publishState(object @state){}

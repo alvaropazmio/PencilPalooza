@@ -13,15 +13,13 @@ export enum AppState {
     Level2 = "Level2",
 };
 
-export class StateSetter extends Behaviour implements IPointerClickHandler
-{
+export class StateSetter extends Behaviour implements IPointerClickHandler {
     state: string = "";
 
     onPointerClick?(args: PointerEventData) {
 
         let s = AppState[this.state];
-        if(s == undefined)
-        {
+        if (s == undefined) {
             console.error("State not found: " + this.state);
             return;
         }
@@ -29,7 +27,7 @@ export class StateSetter extends Behaviour implements IPointerClickHandler
     }
 }
 
-export class StateListener extends Behaviour{
+export class StateListener extends Behaviour {
 
     private stateSub: Unsubscriber;
 
@@ -42,34 +40,78 @@ export class StateListener extends Behaviour{
     @serializable(EventList)
     onResult?: EventList;
 
-    start(){
-        
+    onEnable(): void {
+ 
+        this.context.connection?.beginListen("state", this.onReceivedStateMessage);
+        console.log("Listening for state messages");
+    }
+
+    start() {
+
         CurrentState.set(AppState.Start);
         this.stateSub = CurrentState.subscribe(this.publishState.bind(this));
     }
 
-    onDestroy(){
+    onDestroy() {
         this.stateSub.call(this);
     }
 
-    publishState(state: AppState)
-    {
+    public changeStateToLevel1(){
+        CurrentState.set(AppState.Level1);
+    }
+
+    private onReceivedStateMessage = (data: any) => {
+        console.log("RECEIVED State", data.statename);
+       // const snowballData = data as SnowballData;
+       // const pos = new Vector3(snowballData.xPos, snowballData.yPos, snowballData.zPos);
+       // const vel = new Vector3(snowballData.xVel, snowballData.yVel, snowballData.zVel);
+       // this.SpawnSnowball(pos, vel);
+    
+       if(data.statename == "start"){
+            console.log("GOT !!!!! start");
+    
+       }
+    
+         if(data.soundname == "level1"){
+            console.log("GOT !!!!! Level 1");
+            CurrentState.set(AppState.Level1);
+    
+         }
+    
+         if(data.soundname == "result"){
+      
+    
+           }
+    
+    }
+
+    publishState(state: AppState) {
         console.log(state);
-        if(state === "Start") this.onStart?.invoke();
-        if(state === "Level1") this.onLevel1?.invoke();
-        if(state === "Result") this.onResult?.invoke();
+        if (state === "Start") { 
+            this.onStart?.invoke(); 
+            this.context.connection?.send("state", { statename: "start" });
+        }
+        if (state === "Level1") { 
+            this.onLevel1?.invoke();
+            this.context.connection?.send("state", { statename: "level1" });
+           
+         }
+        if (state === "Result") { 
+            this.onResult?.invoke(); 
+            this.context.connection?.send("state", { statename: "result" });
+        }
     }
 }
 
 export const CurrentState = writable(AppState.None);
 
 
-export function GetCurrentState(): AppState{
+export function GetCurrentState(): AppState {
     //TODO: find out if we can also have a getter here
     return CurrentStateValue;
 }
 
-export function GetPreviousState(): AppState{
+export function GetPreviousState(): AppState {
     //TODO: find out if we can also have a getter here
     return PreviousStateValue;
 }
@@ -89,14 +131,25 @@ export class StateManager extends Behaviour {
         StateManager._initialized = true;
     }
 
-    start(){
+    start() {
         CurrentState.set(AppState.Start);
     }
 
-    onStateChanged(state: AppState){
-        PreviousStateValue = CurrentStateValue; 
-        CurrentStateValue = state; 
-        console.log("Setting state to ", state); 
+    onStateChanged(state: AppState) {
+        PreviousStateValue = CurrentStateValue;
+        CurrentStateValue = state;
+        console.log("Setting state to ", state);
+
+        if (CurrentStateValue === AppState.Start) {
+            this.context.connection?.send("state", { statename: "start" });
+        }
+
+        if (CurrentStateValue === AppState.Level1) {
+            this.context.connection?.send("state", { statename: "level1" });
+            console.log("Sending level1 into networking");
+        }
+
+
     }
 
 }
