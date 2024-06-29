@@ -29,6 +29,9 @@ MonoBehaviour:
     Projects:
     - ProjectPath: ../pensicheads web/LineDrawing
     BuilderScene: 
+  - Path: Assets/Scenes/SampleScene.unity
+    Projects: []
+    BuilderScene: 
   Projects:
   - ProjectPath: ../pensicheads web/LineDrawing
   - ProjectPath: Needle/newProject
