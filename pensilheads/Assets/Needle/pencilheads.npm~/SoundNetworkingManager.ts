@@ -1,4 +1,5 @@
-import { Behaviour, serializable,AudioSource } from "@needle-tools/engine";
+import { Behaviour, serializable,AudioSource, Animator } from "@needle-tools/engine";
+import { CurrentState, AppState } from "pencilheads.npm/StateManager";
 
 // Documentation → https://docs.needle.tools/scripting
 declare type AudioClip = string;
@@ -18,6 +19,19 @@ export class SoundNetworkingManager extends Behaviour {
 
     @serializable(AudioSource)
     bellSound: AudioSource;
+
+    @serializable(Animator)
+    duckAnimator: Animator;
+
+    @serializable(Animator)
+    carAnimator: Animator;
+
+    @serializable(Animator)
+    springAnimator: Animator;
+
+    @serializable(Animator)
+    bellAnimator: Animator;
+
 
 
     @serializable(AudioSource)
@@ -43,6 +57,8 @@ export class SoundNetworkingManager extends Behaviour {
     } */
 
 
+
+
     private onReceivedSoundMessage = (data: any) => {
         console.log("RECEIVED Sound", data.soundname);
        // const snowballData = data as SnowballData;
@@ -52,21 +68,25 @@ export class SoundNetworkingManager extends Behaviour {
 
        if(data.soundname == "duck"){
            this.duckSound.play();
+           this.duckAnimator.setTrigger("Play");
 
        }
 
          if(data.soundname == "car"){
           this.carSound.play();
+            this.carAnimator.setTrigger("Play");
 
          }
 
          if(data.soundname == "bell"){
             this.bellSound.play();
+            this.bellAnimator.setTrigger("Play");
 
            }
 
            if(data.soundname == "spring"){
             this.springSound.play();
+            this.springAnimator.setTrigger("Play");
 
            }
 
@@ -86,6 +106,8 @@ export class SoundNetworkingManager extends Behaviour {
                 }
             }
 }
+
+
 }
 
 export class SnowballData {
