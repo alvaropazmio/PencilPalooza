@@ -178,6 +178,11 @@ PrefabInstance:
       propertyPath: audioName
       value: duck
       objectReference: {fileID: 0}
+    - target: {fileID: 8952317898896171664, guid: c6b5e0dc0922a604ebbea1d398d90226,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: c6d9fa21d0ad637468eb1462d5a44161, type: 3}
     - target: {fileID: 9191958311449810044, guid: c6b5e0dc0922a604ebbea1d398d90226,
         type: 3}
       propertyPath: m_Name
@@ -267,6 +272,11 @@ PrefabInstance:
       propertyPath: audioName
       value: spring
       objectReference: {fileID: 0}
+    - target: {fileID: 8952317898896171664, guid: c6b5e0dc0922a604ebbea1d398d90226,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 2f6865cf7a57ebe4c964dad824da8d8b, type: 3}
     - target: {fileID: 9191958311449810044, guid: c6b5e0dc0922a604ebbea1d398d90226,
         type: 3}
       propertyPath: m_Name
@@ -356,6 +366,11 @@ PrefabInstance:
       propertyPath: audioName
       value: bell
       objectReference: {fileID: 0}
+    - target: {fileID: 8952317898896171664, guid: c6b5e0dc0922a604ebbea1d398d90226,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 64fcc478d55e1be448558ad4d0b731f5, type: 3}
     - target: {fileID: 9191958311449810044, guid: c6b5e0dc0922a604ebbea1d398d90226,
         type: 3}
       propertyPath: m_Name
@@ -710,6 +725,11 @@ PrefabInstance:
       propertyPath: audioName
       value: car
       objectReference: {fileID: 0}
+    - target: {fileID: 8952317898896171664, guid: c6b5e0dc0922a604ebbea1d398d90226,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 5464a5b143f7fdf43809a6b1534be0c2, type: 3}
     - target: {fileID: 9191958311449810044, guid: c6b5e0dc0922a604ebbea1d398d90226,
         type: 3}
       propertyPath: m_Name
