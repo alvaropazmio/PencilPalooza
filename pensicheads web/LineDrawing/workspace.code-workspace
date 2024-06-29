@@ -11,6 +11,11 @@
       "name": "@needle-tools/line-drawing",
       "path": "node_modules/@needle-tools/line-drawing",
       "@needle:managed": true
+    },
+    {
+      "name": "pencilheads.npm",
+      "path": "node_modules/pencilheads.npm",
+      "@needle:managed": true
     }
   ],
   "settings": {

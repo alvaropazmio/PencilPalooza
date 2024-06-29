@@ -11,7 +11,8 @@
   "dependencies": {
 	  "@needle-tools/engine": "^3.41.1-alpha",
 	  "three": "npm:@needle-tools/three@^0.162.3",
-	  "@needle-tools/line-drawing": "file:./../../pensilheads/Library/PackageCache/com.needle.engine-samples@0.17.2/Runtime/LineDrawing/Needle.Samples.LineDrawing~"
+	  "@needle-tools/line-drawing": "file:./../../pensilheads/Library/PackageCache/com.needle.engine-samples@0.17.2/Runtime/LineDrawing/Needle.Samples.LineDrawing~",
+	  "pencilheads.npm": "file:./../../pensilheads/Assets/Needle/pencilheads.npm~"
 	},
   "devDependencies": {
 	  "@needle-tools/helper": "^1.9.0",
