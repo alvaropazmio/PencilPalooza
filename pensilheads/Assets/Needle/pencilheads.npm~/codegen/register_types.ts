@@ -4,6 +4,7 @@ import { TypeStore } from "@needle-tools/engine"
 // Import types
 import { AudioRandomizer } from "../AudioRandomizer.js";
 import { AudioSender } from "../AudioSender.js";
+import { ClockAnimation } from "../ClockAnimation.js";
 import { LinesDrawerPencil } from "../LinesDrawerPencil.js";
 import { LineInstanceHandler } from "../LinesManagerPencil.js";
 import { LinesManagerPencil } from "../LinesManagerPencil.js";
@@ -16,6 +17,7 @@ import { StateManager } from "../StateManager.js";
 // Register types
 TypeStore.add("AudioRandomizer", AudioRandomizer);
 TypeStore.add("AudioSender", AudioSender);
+TypeStore.add("ClockAnimation", ClockAnimation);
 TypeStore.add("LinesDrawerPencil", LinesDrawerPencil);
 TypeStore.add("LineInstanceHandler", LineInstanceHandler);
 TypeStore.add("LinesManagerPencil", LinesManagerPencil);
