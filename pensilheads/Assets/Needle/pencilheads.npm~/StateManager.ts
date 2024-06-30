@@ -38,6 +38,9 @@ export class StateListener extends Behaviour {
     onLevel1?: EventList;
 
     @serializable(EventList)
+    onLevel2?: EventList;
+
+    @serializable(EventList)
     onResult?: EventList;
 
     onEnable(): void {
@@ -94,6 +97,12 @@ export class StateListener extends Behaviour {
         if (state === "Level1") { 
             this.onLevel1?.invoke();
             this.context.connection?.send("state", { statename: "level1" });
+           
+         }
+
+         if (state === "Level2") { 
+            this.onLevel1?.invoke();
+            this.context.connection?.send("state", { statename: "level2" });
            
          }
         if (state === "Result") { 
