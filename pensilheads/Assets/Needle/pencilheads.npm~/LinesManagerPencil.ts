@@ -142,6 +142,31 @@ export class LinesManagerPencil extends Behaviour {
         return this.inFlight[handle.id];
     }
 
+    public deleteAllLines(): void {
+        // Delete finished lines
+        this.finished.forEach(line => {
+            if (line.mesh && line.mesh.parent) {
+                line.mesh.parent.remove(line.mesh);
+            }
+        });
+        this.finished.length = 0;
+
+        // Delete in-flight lines
+        for (const id in this.inFlight) {
+            const line = this.inFlight[id];
+            if (line.mesh && line.mesh.parent) {
+                line.mesh.parent.remove(line.mesh);
+            }
+            delete this.inFlight[id];
+        }
+
+        // Clear buffers
+        for (const id in this.buffer) {
+            delete this.buffer[id];
+        }
+        this.freeBuffer.length = 0;
+    }
+
     private finished: Array<LineInstanceHandler> = [];
     private inFlight: { [key: number]: LineInstanceHandler } = [];
     private buffer: { [key: number]: any[] } = {};

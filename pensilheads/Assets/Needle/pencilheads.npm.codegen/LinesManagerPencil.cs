@@ -11,6 +11,7 @@ namespace Needle.Typescript.GeneratedComponents
 		public void updateLine(object @handle, object @args){}
 		public void endLine(object @handle, bool @send){}
 		public void getLine(object @handle){}
+		public void deleteAllLines(){}
 		public void awake(){}
 	}
 }
