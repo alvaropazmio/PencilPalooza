@@ -10,7 +10,9 @@
 
 {#if $CurrentState === AppState.Start}
     <div class="background">
-        <button on:click={() => setState(AppState.Level1)}> Start Game</button>
+        <h1>Select Game Mode</h1>
+        <button on:click={() => setState(AppState.Level2)}> Run & Draw</button>
+        <button on:click={() => setState(AppState.Level1)}> Make Noise & Guess</button>
     </div>
 {/if}
 
@@ -18,9 +20,15 @@
     <!-- <button on:click={() => setState(AppState.Level1)}> Level 1</button> -->
 {/if}
 
-{#if $CurrentState === AppState.Level1}{/if}
+{#if $CurrentState === AppState.Level2}
+
+{/if}
 
 <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap');
+
+
     .background {
         width: 100vw;
         background-color: #fbda61;
@@ -30,16 +38,25 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-direction: column;
     }
 
     button {
+        font-family: "Playwrite DE Grund", cursive;
+        margin-top: 30px;
         padding: 10px 20px;
-        font-size: 60px;
-        background-color: #000000;
-        color: white;
+        font-size: 20px;
+        background-color: #ffffff;
+        color: rgb(0, 0, 0);
         border: none;
         border-radius: 5px;
         cursor: pointer;
+    }
+
+    h1 {
+        font-family: "Playwrite DE Grund", cursive;
+        font-size: 30px;
+        color: #ffffff;
     }
 
     /* Style goes here*/
