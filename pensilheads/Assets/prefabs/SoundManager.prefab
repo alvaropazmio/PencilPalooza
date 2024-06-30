@@ -186,11 +186,11 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 3dbbca4d036292c42a57fcf73ab5030b, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 38974f2e5242ad1428e7ef898aa4f6e9, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -336,6 +336,10 @@ MonoBehaviour:
   carSound: {fileID: 0}
   springSound: {fileID: 0}
   bellSound: {fileID: 0}
+  duckAnimator: {fileID: 0}
+  carAnimator: {fileID: 0}
+  springAnimator: {fileID: 0}
+  bellAnimator: {fileID: 0}
   winSound: {fileID: 0}
   backgroundMusic: {fileID: 1792261843045540214}
   myStringField: Hello World
